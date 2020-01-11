@@ -1,0 +1,20 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led[1]" LOC = T9 | IOSTANDARD = SDIO;
+NET "led[0]" LOC = R9 | IOSTANDARD = SDIO;
+
+# PlanAhead Generated IO constraints 
+
+#NET "button1" IOSTANDARD = SDIO;
+#NET "button2" IOSTANDARD = SDIO;
+
+# PlanAhead Generated physical constraints 
+
+NET "bluebtn" LOC = T8 | IOSTANDARD = SDIO | PULLUP;
+NET "redbtn" LOC = R7 | IOSTANDARD = SDIO | PULLUP;
+
+# PlanAhead Generated IO constraints 
+
+#NET "led[0]" IOSTANDARD = SDIO;
+#NET "led[1]" IOSTANDARD = SDIO;

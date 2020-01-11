@@ -1,0 +1,242 @@
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blink.ngc blink.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blink_map.ncd blink.ngd blink.pcf 
+par -w -intstyle ise -ol high -mt off blink_map.ncd blink.ncd blink.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blink.twx blink.ncd -o blink.twr blink.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blink.ut blink.ncd 

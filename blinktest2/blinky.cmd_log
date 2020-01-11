@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.xst" -ofn "/files/programming/fpga/xilinx/spartin6/stateMachine/blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 blinky.ngc blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o blinky_map.ncd blinky.ngd blinky.pcf 
+par -w -intstyle ise -ol high -mt off blinky_map.ncd blinky.ncd blinky.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml blinky.twx blinky.ncd -o blinky.twr blinky.pcf -ucf first.ucf 
+bitgen -intstyle ise -f blinky.ut blinky.ncd 

@@ -1,0 +1,24 @@
+
+
+NET "led0" LOC = T9 | IOSTANDARD = SDIO;
+NET "led1" LOC = R9 | IOSTANDARD = SDIO;
+//global system clock
+NET "clk" 		LOC = A10 	| IOSTANDARD = LVTTL;
+
+#NET "button" IOSTANDARD = SDIO;
+
+
+#NET "button" LOC = T8;
+
+
+//NET "led_one" IOSTANDARD = SDIO;
+//NET "led_two" IOSTANDARD = SDIO;
+
+# PlanAhead Generated IO constraints 
+
+#NET "led[2]" IOSTANDARD = SDIO;
+#NET "led[3]" IOSTANDARD = SDIO;
+#NET "led[4]" IOSTANDARD = SDIO;
+#NET "led[5]" IOSTANDARD = SDIO;
+#NET "led[6]" IOSTANDARD = SDIO;
+#NET "led[7]" IOSTANDARD = SDIO;

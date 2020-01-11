@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/files/programming/fpga/xilinx/spartin6/3rdproj/top.ncd
+OUTFILE=/files/programming/fpga/xilinx/spartin6/3rdproj/top.bit
+FAMILY=Spartan6
+PART=xc6slx16-3ftg256
+WORKINGDIR=/files/programming/fpga/xilinx/spartin6/3rdproj
+LICENSE=WebPack
+USER_INFO=211850934_0_0_115

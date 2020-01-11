@@ -1,0 +1,536 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Reading design: blink.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "blink.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "blink"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-ftg256
+
+---- Source Options
+Top Module Name                    : blink
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.v" into library work
+Parsing module <FSMLUT>.
+Parsing module <blink>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <blink>.
+WARNING:HDLCompiler:604 - "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.v" Line 127: Module instantiation should have an instance name
+
+Elaborating module <FSMLUT>.
+WARNING:HDLCompiler:189 - "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.v" Line 127: Size mismatch in connection of port <I>. Formal port size is 2-bit while actual signal size is 1-bit.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <blink>.
+    Related source file is "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.v".
+    Found 1-bit register for signal <dir>.
+    Found 6-bit register for signal <count>.
+    Found 4-bit register for signal <LUTLATCHO>.
+    Found 23-bit register for signal <clkdown>.
+    Found 6-bit subtractor for signal <count[5]_GND_1_o_sub_10_OUT> created at line 121.
+    Found 23-bit adder for signal <clkdown[22]_GND_1_o_add_1_OUT> created at line 101.
+    Found 6-bit adder for signal <count[5]_GND_1_o_add_8_OUT> created at line 120.
+    Found 6-bit comparator lessequal for signal <count[5]_clkdown[5]_LessThan_15_o> created at line 131
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <blink> synthesized.
+
+Synthesizing Unit <FSMLUT>.
+    Related source file is "/files/programming/fpga/xilinx/spartin6/stateMachine/blink.v".
+    Found 32x5-bit Read Only RAM for signal <_n0813>
+WARNING:Xst:737 - Found 1-bit latch for signal <FBO<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <FBO<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <FBO<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OP<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OP<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OP<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <OP<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <FBO<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 Latch(s).
+	inferred   3 Multiplexer(s).
+Unit <FSMLUT> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x5-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 2
+ 23-bit adder                                          : 1
+ 6-bit addsub                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 1
+ 23-bit register                                       : 1
+ 4-bit register                                        : 1
+ 6-bit register                                        : 1
+# Latches                                              : 8
+ 1-bit latch                                           : 8
+# Comparators                                          : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <FBO_3> (without init value) has a constant value of 0 in block <_i000014>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <LUTLATCHO_3> (without init value) has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <FSMLUT>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0813> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 5-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <(FBI<2:0>,I)>  |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <FSMLUT> synthesized (advanced).
+
+Synthesizing (advanced) Unit <blink>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <clkdown>: 1 register on signal <clkdown>.
+Unit <blink> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 32x5-bit single-port distributed Read Only RAM        : 1
+# Counters                                             : 2
+ 23-bit up counter                                     : 1
+ 6-bit updown counter                                  : 1
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 1
+ 6-bit comparator lessequal                            : 1
+# Multiplexers                                         : 3
+ 1-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <FBO_3> (without init value) has a constant value of 0 in block <FSMLUT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <clkdown_22> of sequential type is unconnected in block <blink>.
+
+Optimizing unit <blink> ...
+
+Optimizing unit <FSMLUT> ...
+WARNING:Xst:1710 - FF/Latch <LUTLATCHO_3> (without init value) has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1294 - Latch <_i000014/FBO_1> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/OP_1> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/OP_0> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/OP_2> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/FBO_0> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/FBO_2> is equivalent to a wire in block <blink>.
+WARNING:Xst:1294 - Latch <_i000014/OP_3> is equivalent to a wire in block <blink>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block blink, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : blink.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 89
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 21
+#      LUT3                        : 8
+#      LUT4                        : 2
+#      LUT5                        : 2
+#      LUT6                        : 6
+#      MUXCY                       : 21
+#      MUXF7                       : 2
+#      VCC                         : 1
+#      XORCY                       : 22
+# FlipFlops/Latches                : 32
+#      FD                          : 29
+#      FD_1                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 1
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16ftg256-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              32  out of  18224     0%  
+ Number of Slice LUTs:                   42  out of   9112     0%  
+    Number used as Logic:                42  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     42
+   Number with an unused Flip Flop:      10  out of     42    23%  
+   Number with an unused LUT:             0  out of     42     0%  
+   Number of fully used LUT-FF pairs:    32  out of     42    76%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    186     6%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkdown_21                         | NONE(LUTLATCHO_0)      | 10    |
+clk                                | BUFGP                  | 22    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 3.961ns (Maximum Frequency: 252.430MHz)
+   Minimum input arrival time before clock: 2.180ns
+   Maximum output required time after clock: 6.744ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkdown_21'
+  Clock period: 3.961ns (frequency: 252.430MHz)
+  Total number of paths / destination ports: 52 / 10
+-------------------------------------------------------------------------
+Delay:               1.981ns (Levels of Logic = 2)
+  Source:            count_4 (FF)
+  Destination:       dir (FF)
+  Source Clock:      clkdown_21 falling
+  Destination Clock: clkdown_21 rising
+
+  Data Path: count_4 to dir
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.447   1.089  count_4 (count_4)
+     LUT6:I1->O            1   0.203   0.000  dir_glue_rst_G (N14)
+     MUXF7:I1->O           1   0.140   0.000  dir_glue_rst (dir_glue_rst)
+     FD:D                      0.102          dir
+    ----------------------------------------
+    Total                      1.981ns (0.892ns logic, 1.089ns route)
+                                       (45.0% logic, 55.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.103ns (frequency: 475.454MHz)
+  Total number of paths / destination ports: 253 / 22
+-------------------------------------------------------------------------
+Delay:               2.103ns (Levels of Logic = 23)
+  Source:            clkdown_0 (FF)
+  Destination:       clkdown_21 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: clkdown_0 to clkdown_21
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.616  clkdown_0 (clkdown_0)
+     INV:I->O              1   0.206   0.000  Mcount_clkdown_lut<0>_INV_0 (Mcount_clkdown_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcount_clkdown_cy<0> (Mcount_clkdown_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<1> (Mcount_clkdown_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<2> (Mcount_clkdown_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<3> (Mcount_clkdown_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<4> (Mcount_clkdown_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<5> (Mcount_clkdown_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<6> (Mcount_clkdown_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<7> (Mcount_clkdown_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<8> (Mcount_clkdown_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<9> (Mcount_clkdown_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<10> (Mcount_clkdown_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<11> (Mcount_clkdown_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<12> (Mcount_clkdown_cy<12>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<13> (Mcount_clkdown_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<14> (Mcount_clkdown_cy<14>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<15> (Mcount_clkdown_cy<15>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<16> (Mcount_clkdown_cy<16>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<17> (Mcount_clkdown_cy<17>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<18> (Mcount_clkdown_cy<18>)
+     MUXCY:CI->O           1   0.019   0.000  Mcount_clkdown_cy<19> (Mcount_clkdown_cy<19>)
+     MUXCY:CI->O           0   0.019   0.000  Mcount_clkdown_cy<20> (Mcount_clkdown_cy<20>)
+     XORCY:CI->O           1   0.180   0.000  Mcount_clkdown_xor<21> (Result<21>)
+     FD:D                      0.102          clkdown_21
+    ----------------------------------------
+    Total                      2.103ns (1.487ns logic, 0.616ns route)
+                                       (70.7% logic, 29.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkdown_21'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.180ns (Levels of Logic = 2)
+  Source:            bluebtn (PAD)
+  Destination:       LUTLATCHO_0 (FF)
+  Destination Clock: clkdown_21 falling
+
+  Data Path: bluebtn to LUTLATCHO_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.651  bluebtn_IBUF (bluebtn_IBUF)
+     LUT4:I3->O            1   0.205   0.000  _i000014/Mram__n0813411 (LUTLATCHN<2>)
+     FD_1:D                    0.102          LUTLATCHO_2
+    ----------------------------------------
+    Total                      2.180ns (1.529ns logic, 0.651ns route)
+                                       (70.1% logic, 29.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkdown_21'
+  Total number of paths / destination ports: 18 / 5
+-------------------------------------------------------------------------
+Offset:              6.744ns (Levels of Logic = 4)
+  Source:            count_2 (FF)
+  Destination:       U8_45 (PAD)
+  Source Clock:      clkdown_21 falling
+
+  Data Path: count_2 to U8_45
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.447   1.147  count_2 (count_2)
+     LUT6:I1->O            1   0.203   0.580  U8_452 (U8_451)
+     LUT3:I2->O            1   0.205   0.808  U8_451_SW0 (N4)
+     LUT5:I2->O            1   0.205   0.579  U8_451 (U8_45_OBUF)
+     OBUF:I->O                 2.571          U8_45_OBUF (U8_45)
+    ----------------------------------------
+    Total                      6.744ns (3.631ns logic, 3.113ns route)
+                                       (53.8% logic, 46.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 1
+-------------------------------------------------------------------------
+Offset:              6.579ns (Levels of Logic = 4)
+  Source:            clkdown_2 (FF)
+  Destination:       U8_45 (PAD)
+  Source Clock:      clk rising
+
+  Data Path: clkdown_2 to U8_45
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  clkdown_2 (clkdown_2)
+     LUT6:I0->O            1   0.203   0.580  U8_452 (U8_451)
+     LUT3:I2->O            1   0.205   0.808  U8_451_SW0 (N4)
+     LUT5:I2->O            1   0.205   0.579  U8_451 (U8_45_OBUF)
+     OBUF:I->O                 2.571          U8_45_OBUF (U8_45)
+    ----------------------------------------
+    Total                      6.579ns (3.631ns logic, 2.948ns route)
+                                       (55.2% logic, 44.8% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.103|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clkdown_21
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clkdown_21     |    2.030|    1.981|    2.190|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.29 secs
+ 
+--> 
+
+
+Total memory usage is 373140 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   22 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

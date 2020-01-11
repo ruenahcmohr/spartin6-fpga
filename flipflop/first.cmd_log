@@ -1,0 +1,86 @@
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/button/button/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/button/button/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /files/programming/fpga/xilinx/spartin6/temp/first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /files/programming/fpga/xilinx/spartin6/temp/first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/button/button/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/button/button/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /files/programming/fpga/xilinx/spartin6/temp/first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/button/button/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/button/button/first.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/button/button/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/button/button/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /files/programming/fpga/xilinx/spartin6/temp/first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/button/button/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/button/button/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /files/programming/fpga/xilinx/spartin6/temp/first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf 
+bitgen -intstyle ise -f first.ut first.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/twobutton/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/twobutton/first.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc first.ucf -p xc6slx16-ftg256-3 first.ngc first.ngd  
+map -intstyle ise -p xc6slx16-ftg256-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o first_map.ncd first.ngd first.pcf 
+par -w -intstyle ise -ol high -mt off first_map.ncd first.ncd first.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml first.twx first.ncd -o first.twr first.pcf -ucf first.ucf 
+bitgen -intstyle ise -f first.ut first.ncd 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/3rdproj/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/3rdproj/first.syr" 
+xst -intstyle ise -ifn "/files/programming/fpga/xilinx/spartin6/3rdproj/first.xst" -ofn "/files/programming/fpga/xilinx/spartin6/3rdproj/first.syr" 
