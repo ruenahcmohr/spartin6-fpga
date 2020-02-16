@@ -1,0 +1,27 @@
+INFO:sim:172 - Generating IP...
+Resolving generics for 'clockgen'...
+Applying external generics to 'clockgen'...
+WARNING:coreutil - Failed to generate file: core_v
+       invoked from within
+   "deliverEJava $componentName GenerationOptions $TopLevel"
+       (procedure "components::clockgen::generate" line 36)
+       invoked from within
+   "components::${componentName}::generate"
+       (procedure "::xilinx::sim::generation::generateCore3rdParty" line 125)
+       invoked from within
+   "::xilinx::sim::generation::generateCore3rdParty
+   $parameters(componentInstanceID)"
+       (procedure "main" line 25)
+       invoked from within
+   "main $argc $argv"
+       invoked from within
+   "return [main $argc $argv]"
+       (file
+   "/opt/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/clk_wiz_
+   v3_6/generate/run_legacy_tcl_flow.tcl" line 47)ERROR:sim - Unable to evaluate Tcl file:
+   /opt/Xilinx/14.7/ISE_DS/ISE/coregen/ip/xilinx/primary/com/xilinx/ip/clk_wiz_v
+   3_6/generate/run_legacy_tcl_flow.tcl
+ERROR:sim - Failed executing Tcl generator.
+ERROR:sim - Failed to generate 'clockgen'.  Failed executing Tcl generator.
+
+Wrote CGP file for project 'clockgen'.

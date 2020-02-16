@@ -1,0 +1,83 @@
+LEDS
+-----
+
+D1  Bank2_IO_T9
+D2  FPGA_DONE
+D3  Bank2_IO_R9
+D4  POWER
+
+
+BUTTONS
+-------
+
+SW1  PROGB
+SW2  Bank2_IO_T8
+SW3  Bank2_IO_R7
+
+flash write
+-----------
+
+xc3sprog -c ft232h xc6slx16_cs324.bit
+xc3sprog -c ft232h -I main.bit
+
+
+
+direct program
+---------------
+
+xc3sprog -c ft232h main.bit
+
+
+
+IDE
+----
+
+in /opt/xilinx/ run settings64.sh
+in /opt/xilinx/14.7/ISE_DS/ISE/bin/lin64 run ise
+
+
+MISC
+-----
+
+QMtech examles are verilog (.v)
+package is FTG256
+
+
+VERILOG
+-------
+
+numbers:
+1'     b        1
+1bit  binary  value=1
+
+
+wire
+wor
+wand
+--
+tri
+triand
+trior
+tri0
+tri1
+trireg
+--
+supply0
+supply1
+--
+uwire (1:1 connect)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
